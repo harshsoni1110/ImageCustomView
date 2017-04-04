@@ -15,6 +15,9 @@ import android.widget.ImageView;
 
 public class ImageViewThumbnail extends ImageView {
 
+    /**
+     * Radius for circular image, default is 0
+     */
     private float mRadius = 0f;
 
     public ImageViewThumbnail(Context context) {
@@ -30,6 +33,7 @@ public class ImageViewThumbnail extends ImageView {
         );
 
         try {
+            //radius fetch
             mRadius = a.getFloat(R.styleable.ImageViewThumbnail_circleRadius,18.0f);
             if (mRadius < 0){
                 mRadius = 0;

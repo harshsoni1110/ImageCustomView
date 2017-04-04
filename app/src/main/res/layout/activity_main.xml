@@ -11,17 +11,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="harsh.com.imagecustomview.MainActivity">
 
-<!--
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
--->
-
-    <com.saba.spc.customviews.ImageViewThumbnail
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <harsh.com.imagecustomview.ImageViewThumbnail
+        android:id="@+id/imageViewThumbnail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:scaleType="fitXY"
-        app:circleRadius="110"
+        app:circleRadius="250"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:src="@drawable/mini"/>
 </RelativeLayout>
